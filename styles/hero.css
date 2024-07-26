@@ -207,3 +207,106 @@ section.hero {
         transform: translateY(-15rem);
     }
 }
+
+@media ( width <= 30em ) {
+    section.hero {
+        max-width: 42rem;
+        margin: .5rem;
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    header {
+        max-width: 42rem;
+        width: 100%;
+        margin: .5rem;
+        border: 1px solid red;
+        padding: .5rem;
+
+    }
+
+    & div {
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-left: -.5rem;
+        max-width: 30rem;
+    }
+
+    & .buttons {
+        flex-direction: column;
+
+        & .button {
+            font-size: .8rem;
+        }
+    }
+
+    h1 div {
+        display: inline-block;
+        overflow: hidden;
+        height: .5rem;
+        width: min-content;
+        vertical-align: bottom;
+    }
+
+
+    @keyframes slideUp {
+        0%, 22% {
+            transform: translateY(0);
+        }
+        23% {
+            transform: translateY(calc(-2rem -2px));
+        }
+        25% {
+            transform: translateY(calc(-2rem + 5px));
+        }
+        27% {
+            transform: translateY(calc(-2rem - 2px));
+        }
+        29% {
+            transform: translateY(calc(-2rem + 2px));
+        }
+    
+        33%, 55% {
+            transform: translateY(-2rem);
+        }
+        56% {
+            transform: translateY(calc(-4rem - 2px));
+        }
+        58% {
+            transform: translateY(calc(-4rem + 5px));
+        }
+        60% {
+            transform: translateY(calc(-4rem - 2px));
+        }
+        62% {
+            transform: translateY(calc(-4rem + 2px));
+        }
+    
+        66%, 88% {
+            transform: translateY(-4rem);
+        }
+        89% {
+            transform: translateY(calc(-6rem - 2px));
+        }
+        91% {
+            transform: translateY(calc(-6rem + 5px));
+        }
+        93% {
+            transform: translateY(calc(-6rem - 2px));
+        }
+        95% {
+            transform: translateY(calc(-6rem + 2px));
+        }
+    
+    
+    
+        100% {
+            transform: translateY(-3rem);
+        }
+    }
+}
